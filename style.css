@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  height: 100vh;
+  background-color: #1abc9c;
+  position: relative;
+  overflow: hidden;
+}
+
+.score {
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+.score p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  margin-top: 10rem;
+  transition: opacity 1s linear;
+}
+
+.btn {
+  height: 70px;
+  width: 150px;
+  border-radius: 5%;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.intro button {
+  margin-top: 4rem;
+}
+
+.game {
+  opacity: 0;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  transition: opacity 2s linear;
+  transition-delay: 1s;
+}
+
+.options {
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.images :nth-child(1) {
+  transform: rotateY(180deg);
+}
+
+.option-btns {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.option-btns button {
+  text-transform: capitalize;
+}
+
+@keyframes shakehand {
+  0% {
+    transform: rotateY(180deg) translateY(-0px);
+  }
+  25% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-0px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(-0px);
+  }
+}
+
+@keyframes shakeComphand {
+  0% {
+    transform: translateY(-0px);
+  }
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(-0px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(-0px);
+  }
+}
